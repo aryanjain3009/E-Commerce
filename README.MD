@@ -43,7 +43,7 @@
 
 # **Project Setup**
 
-  git clone https://github.com/RishiBakshii/mern-ecommerce.git
+  git clone https://github.com/aryanjain3009/E-Commerce.git
 
 ### Navigate to the project directory
 
