@@ -15,6 +15,7 @@ exports.getByUserId = async (req, res) => {
     try {
         const {id}=req.params
         const results=await Address.find({user:id})
+        console.log(results);   
         res.status(200).json(results)
     
     } catch (error) {
@@ -27,6 +28,7 @@ exports.updateById=async(req,res)=>{
     try {
         const {id}=req.params
         const updated=await Address.findByIdAndUpdate(id,req.body,{new:true})
+        console.log("updated address"); 
         console.log(updated);
         res.status(200).json(updated)
     } catch (error) {
