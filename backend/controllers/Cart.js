@@ -49,6 +49,7 @@ exports.deleteByUserId=async(req,res)=>{
 
     try {
         const {id}=req.params
+        console.log(id);
         await Cart.deleteMany({user:id})
         res.sendStatus(204)
     } catch (error) {
